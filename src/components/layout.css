@@ -1,9 +1,10 @@
 :root {
-  --mainBrown: #2d1ef1;
-  --mainYellow: #ff9e09;
+  --mainBlue: #2d1e1f;
+  --mainYellow: rgb(255, 158, 9);
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
+  --mainBrown: #523615;
 }
 
 body {
@@ -30,5 +31,40 @@ h6 {
   cursor: pointer;
   color: var(--mainYellow);
   font-size: 2rem;
-  /* vertical-align: bottom; */
+}
+.default-background,
+.about-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(255, 158, 9, 0.5), rgba(255, 158, 9, 0.5));
+  background-position: center;
+  background-size: cover;
+  opacity: 1 !important;
+}
+
+.btn-yellow {
+  color: grey;
+  border-color: var(--mainYellow);
+  background: transparent;
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainBlue);
+}
+
+.footer {
+  background: var(--mainBlue);
+}
+
+/* ABOUT PAGE */
+
+.about-background {
+  min-height: 60vh;
 }

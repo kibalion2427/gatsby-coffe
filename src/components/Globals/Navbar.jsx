@@ -18,6 +18,11 @@ class Navbar extends Component {
         path: "/about",
         text: "about",
       },
+      {
+        id: 3,
+        path: "/contact",
+        text: "contact",
+      },
     ],
   }
   navBarHandler = () => {
