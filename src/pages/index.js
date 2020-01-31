@@ -28,22 +28,21 @@ export const query = graphql`
         }
       }
     }
-
     menu: allContentfulCoffeItem {
       edges {
         node {
           id
           title
-          price
           description {
             description
           }
+          price
+          category
           image {
             fixed(width: 50, height: 50) {
               ...GatsbyContentfulFixed_tracedSVG
             }
           }
-          category
         }
       }
     }
