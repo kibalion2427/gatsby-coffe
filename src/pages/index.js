@@ -5,8 +5,8 @@ import SEO from "../components/seo"
 import Background from "../components/Globals/Background"
 import Info from "../components/Home/Info"
 import Menu from "../components/Home/Menu"
-
 import ListProducts from "../components/Home/ListProducts"
+import Contact from "../components/Home/Contact"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -19,6 +19,7 @@ const IndexPage = ({ data }) => (
     <Info />
     <Menu items={data.menu} />
     <ListProducts />
+    <Contact />
   </Layout>
 )
 
